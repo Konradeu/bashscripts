@@ -24,6 +24,8 @@ echo "Created Bearer Token";
 echo "Preparing the JSON for update"
 
 # Below, change the variable "markTransactionAsErrorOnErrorMessageLog" to true or false as needed
+# true if the app should collect the error snapshots
+# false if the app should stop collecting error snapshots
 tmp_json='{
   "id": 0,
   "version": 0,
