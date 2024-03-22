@@ -5,7 +5,7 @@ account=""  # The Controller Account Name
 apiclient="" # The API Client Created in the Administration section in the Controller
 secret="" # The API Clien secret
 
-applicationId=0 # Choose the application for which you want to create the Action Suppression - ID Taken fron the URL when in the Application UI in the Controller
+applicationId=0 # Choose the application for which you want to create the Action Suppression - ID Taken from the URL when in the Application UI in the Controller
 
 # Generate the barer token
 rawToken=$(curl -s -H "Content-Type: application/x-www-form-urlencoded" -d "grant_type=client_credentials&client_id=$apiclient@$account&client_secret=$secret" "$controllerHost/controller/api/oauth/access_token");
